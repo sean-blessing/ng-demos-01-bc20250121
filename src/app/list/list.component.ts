@@ -15,4 +15,7 @@ export class ListComponent {
   addFruit() {
     this.fruits.push(this.newFruit);
   }
+  delFruit(fruit: string) {
+    console.log(`Delete fruit: ${fruit}`);
+  }
 }

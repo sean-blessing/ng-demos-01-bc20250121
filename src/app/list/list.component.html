@@ -3,6 +3,15 @@
 <label>New Fruit:</label>
 <input [(ngModel)]="newFruit" type="text">
 <button (click)="addFruit()">Add</button>
-<ul>
+<!-- <ul>
   <li *ngFor="let fruit of fruits">{{ fruit }}</li>
-</ul>
+</ul> -->
+<table>
+  <tr>
+    <td>Fruit</td><td>Action</td>
+  </tr>
+  <tr *ngFor="let fruit of fruits">
+    <td>{{fruit}}</td>
+    <td><button (click)="delFruit(fruit)">Delete</button></td>
+  </tr>
+</table>
