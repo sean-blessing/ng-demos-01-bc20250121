@@ -1,0 +1,8 @@
+<h3>{{ title }}</h3>
+<p *ngIf="displayable">This paragraph only displays if displayable == true</p>
+<label>New Fruit:</label>
+<input [(ngModel)]="newFruit" type="text">
+<button (click)="addFruit()">Add</button>
+<ul>
+  <li *ngFor="let fruit of fruits">{{ fruit }}</li>
+</ul>
